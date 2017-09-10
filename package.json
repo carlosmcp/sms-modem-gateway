@@ -1,0 +1,24 @@
+{
+  "name": "sms-sender",
+  "version": "1.0.0",
+  "description": "Envio de SMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/carlosmcp/sms-node.git"
+  },
+  "keywords": [
+    "sms",
+    "nodejs",
+    "gammu"
+  ],
+  "author": "Carlos Brito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosmcp/sms-node/issues"
+  },
+  "homepage": "https://github.com/carlosmcp/sms-node#readme"
+}

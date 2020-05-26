@@ -4,11 +4,30 @@
   "description": "Envio de SMS",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "build": "clean && tsc",
+    "clean": "rimraf ./build &&"
+  },
+  "jest": {
+    "verbose": true,
+    "displayName": {
+      "name": "sms-sender",
+      "color": "blue"
+    },
+    "preset": "ts-jest",
+    "testMatch": [
+      "**/__tests__/**/*test*.[jt]s?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "build",
+      "dist"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/carlosmcp/sms-node.git"
+    "url": "https://github.com/carlosmcp/sms-modem-gateway.git"
   },
   "keywords": [
     "sms",
@@ -20,5 +39,24 @@
   "bugs": {
     "url": "https://github.com/carlosmcp/sms-node/issues"
   },
-  "homepage": "https://github.com/carlosmcp/sms-node#readme"
+  "homepage": "https://github.com/carlosmcp/sms-node#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "^23.13.1",
+    "s": "^1.0.0",
+    "typescript": "^3.9.3"
+  }
 }

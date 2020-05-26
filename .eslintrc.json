@@ -1,0 +1,53 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "jest"
+    ],
+    "rules": {
+        "no-console": [
+            "error"
+        ],
+        "semi": [
+            2,
+            "never"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "@typescript-eslint/member-ordering": [
+            "error"
+        ],
+        "@typescript-eslint/explicit-member-accessibility": [
+            "error"
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ]
+    }
+}

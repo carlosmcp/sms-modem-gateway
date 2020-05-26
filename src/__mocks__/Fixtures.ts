@@ -1,3 +1,7 @@
+/**
+ * Fixtures test
+ *
+ */
 import { Status } from '../GatewayModemSMS'
 
 export const phone = 11999999999

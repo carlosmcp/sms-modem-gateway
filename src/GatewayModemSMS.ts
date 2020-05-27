@@ -11,10 +11,7 @@ import * as child from 'child_process'
  */
 
 export enum Status {
-      ERROR_UNACKNOWLEDGED = 'Error not found',
-      ERROR_DEVICE_NOT_FOUND = 'Error opening device',
-      ERROR_DEVICE_NOT_CONNECTED = 'Probably the phone is not connected.',
-      ERROR_CONFIG_NOT_FOUND = 'Warning: No configuration file found!',
+  ERROR_GAMMU_NOT_INSTALLED = 'gammu: not found',
       ERROR_SEND = 'waiting for network answer..error',
       OK = 'waiting for network answer..OK'
 }

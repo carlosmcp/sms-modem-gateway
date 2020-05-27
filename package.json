@@ -11,13 +11,14 @@
   },
   "jest": {
     "verbose": true,
+    "cache": false,
     "displayName": {
       "name": "sms-sender",
       "color": "blue"
     },
     "preset": "ts-jest",
     "testMatch": [
-      "**/__tests__/**/*test*.[jt]s?(x)"
+      "**/src/__tests__/**/*test*.[jt]s?(x)"
     ],
     "testPathIgnorePatterns": [
       "/node_modules/",

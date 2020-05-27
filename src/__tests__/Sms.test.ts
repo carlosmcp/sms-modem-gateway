@@ -8,10 +8,7 @@ import * as fixtures from '../__mocks__/Fixtures'
  * @since 1.0 <2020-05-22>
  */
 
-test.each(fixtures.statusErros)('Should throws "%p" error', (key) => {
-  const status = (<any>Status)[key]
-  const mockShellCommand = jest.fn().mockReturnValue(Promise.resolve(status))
-  GatewayModemSMS.prototype.execShellCommand = mockShellCommand
+  jest.mock('child_process')
 
   return new GatewayModemSMS()
     .sendMessage(fixtures.phone, fixtures.message)

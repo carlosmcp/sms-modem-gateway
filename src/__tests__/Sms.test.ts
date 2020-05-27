@@ -21,5 +21,5 @@ test('Should get "Ok" when send a message.', () => {
 
   return new GatewayModemSMS()
     .sendMessage(fixtures.phone, fixtures.message)
-    .catch(err => expect(err.status).toBe(Status.OK))
+      expect(error.message).toBe(fixtures.infraErroMessage)
 })
